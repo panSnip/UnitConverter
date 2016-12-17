@@ -1,0 +1,30 @@
+<?php
+	// This is a MILE to KILOMETER converter script
+
+	/*
+		Steps for creating this script:
+
+		1. Prompting the user to select a conversion option
+		2. Prompting the user for input
+		3. Converting the input from either option to the other
+		4. Returning the result to the user
+	*/
+
+	$conversionOption = readline("Are you entering miles or kilometers? ");
+
+	if ($conversionOption = "miles") {
+		$amountInMiles = readline("Enter the amount of miles: ");
+		$miles2Kilometers = $amountInMiles * 1.60934;
+
+		echo $miles2Kilometers;
+
+	} else if ($conversionOption = "kilometers") {
+		$amountInKilometers = readline("Enter the amount of kilometers: ");
+		$kilometers2Miles = $amountInKilometers * 0.621371;
+
+		echo $kilometers2Miles;
+
+	} else {
+		echo "That is not valid input!";
+	}
+?>
