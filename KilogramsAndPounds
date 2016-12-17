@@ -1,0 +1,30 @@
+<?php
+	// This is a POUND to KILOGRAM converter script
+
+	/*
+		Steps for creating this script:
+
+		1. Prompting the user to select a conversion option
+		2. Prompting the user for input
+		3. Converting the input from either option to the other
+		4. Returning the result to the user
+	*/
+
+	$conversionOption = readline("Are you entering pounds or kilograms? ");
+
+	if ($conversionOption = "pounds") {
+		$amountInPounds = readline("Enter the amount of pounds: ");
+		$pounds2Kilograms = $amountInPounds * 0.453592;
+
+		echo $pounds2Kilograms;
+
+	} else if ($conversionOption = "kilograms") {
+		$amountInKilograms = readline("Enter the amount of kilograms: ");
+		$kilograms2Pounds = $amountInKilograms * 2.20462;
+
+		echo $kilograms2Pounds;
+
+	} else {
+		echo "That is not valid input!";
+	}
+?>
